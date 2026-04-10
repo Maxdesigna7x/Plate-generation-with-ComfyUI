@@ -6,7 +6,9 @@ This project solves the OCR data collection problem using a two-stage pipeline:
 1. **Image Generation** via ComfyUI using a Z-Image diffusion model.
 2. **Automated Visual Audit** using a local vision LLM (via LM Studio or Ollama) to ensure the text generated in the image perfectly matches the dataset label.
 
----
+![Geometry Nodes Setup](ComfyUI.png)
+
+![Geometry Nodes Setup](Preview.png)
 
 ## 💻 Hardware & Model Requirements
 
