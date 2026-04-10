@@ -16,14 +16,18 @@ To run this pipeline locally, your system must meet the following hardware requi
 
 * **VRAM Required:** 8 GB (Peak during ComfyUI generation).
 * **UNet Model (Z-Image):** `z_image_turbo_nvfp4.safetensors` (Size: 4.5 GB)
-* **CLIP Model:** `qwen_3_4b.safetensors` (Size: 8 GB)
+* **CLIP Model:** `qwen_3_4b_fp4_mixed.safetensors` (Size: 3.48 GB)
 * **VAE Model:** `ae.safetensors`
+* **Qwen3VL-4B (Intruct, not thinking):** `Qwen3VL-4B-Instruct-Q4_K_M.gguf` (Size: 2.5 GB) + `mmproj-Qwen3VL-4B-Instruct-Q8_0.gguf` (Size: 450 MB)
 
 ### Software Dependencies
 * Python 3.x
 * `requests` library
 * **ComfyUI** running locally at `http://127.0.0.1:8188`
-* **Vision LLM Server:** LM Studio (OpenAI-compatible API) or Ollama (`/api/chat`). The `qwen/qwen3-vl-4b` model is recommended if your hardware permits.
+* **Vision LLM Server:** LM Studio (OpenAI-compatible API) or Ollama (`/api/chat`).
+  
+
+
 
 ---
 
